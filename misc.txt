@@ -1,0 +1,25 @@
+python C:\Users\IBM_ADMIN\Desktop\svsapp\svsapp\manage.py shell
+
+C:\Users\IBM_ADMIN\Desktop\svsapp\svsapp\manage.py
+
+>>> from app import db
+>>> db.drop_all()
+>>> db.create_all()
+>>> quit()
+
+
+pip freeze > stable-req.txt
+>celery worker -A celery_worker.celery --loglevel=debug
+https://github.com/miguelgrinberg/flasky-with-celery/blob/master/celery_worker.py
+
+
+pip install -r stable-req.txt
+
+
+http://127.0.0.1:5000/api_5/token
+http://127.0.0.1:5000/api_5/viewmycams
+
+http --json --auth nirav.j05@gmail.com:123 GET http://127.0.0.1:5000/api_5/viewmycams
+
+
+

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}
+SVS Camthread  Sucessfull.
+{% endblock %}
+{%block page_content%}
+<article class="article.flashes">
+                    <header>
+                        <h1>Came which are not working as following</h1>
+                        {% for cam in displayNotworking %}
+                        <ul>
+                        {{ cam }}
+                            </ul>
+                        {% endfor %}
+                        <p>SVS Please login to site with Login Page</p>
+                    </header>
+</article>
+{%endblock%}
